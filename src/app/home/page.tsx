@@ -1,4 +1,4 @@
-import { authConfig, loginIsRequiredServer } from "@/src/lib/auth";
+import { authConfig, loginIsRequiredServer } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 
 const wait = (ms: number) => new Promise((rs) => setTimeout(rs, ms));

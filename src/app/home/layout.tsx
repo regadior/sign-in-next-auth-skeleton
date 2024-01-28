@@ -1,4 +1,4 @@
-import SingOut from "@/src/components/SingOut";
+import SingOut from "@/components/singOut";
 
 export default async function Layout({ children }: { children: any }) {
   return (

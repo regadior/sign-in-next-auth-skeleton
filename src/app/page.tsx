@@ -1,11 +1,8 @@
-import {
-  GithubSignInButton,
-  GoogleSignInButton,
-  TwitchSignInButton,
-} from "@/src/components/authButtons";
+
 import { getServerSession } from "next-auth";
-import { authConfig } from "@/src/lib/auth";
+import { authConfig } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import { GithubSignInButton, GoogleSignInButton, TwitchSignInButton } from "@/components/authButtons";
 
 export default async function SignInPage() {
   const session = await getServerSession(authConfig);
