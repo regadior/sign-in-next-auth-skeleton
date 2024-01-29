@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+ <img
+  width="450"
+ alt="MediApp"
+ src="https://imgur.com/r9QDBhm.png">
 
-## Getting Started
+<h4>
+  🚀 Template to start a sing in application with next auth
+</h4>
 
-First, run the development server:
+ <a href="#ℹ️-about">ℹ️ About</a> •
+ <a href="#-install"> ✨ Install</a> •
+ <a href="#-actions">🌚 Actions</a> •
+ <a href="#-stargazers">⭐ Stargazers</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ℹ️ About
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project consists of a web made with ` NextJs `, using ` NextAuth ` to Sing In (in this case with google, github and twitch).
+- Technologies and tools:
+  - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?&logo=typescript&logoColor=white)
+  - ![Next JS](https://img.shields.io/badge/Next-black?&logo=next.js&logoColor=white)
+  - ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?&logo=visual-studio-code&logoColor=white)
+  - ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?&logo=docker&logoColor=white)
+  - ![Git-flow](https://img.shields.io/badge/gitFlow-%23F05033.svg?&logo=git&logoColor=white)
 
-## Learn More
+## ✨ Install
+#### Ubuntu
+1. Install Node: 
+	- `sudo apt install nodejs`
+   - `sudo apt install npm`
 
-To learn more about Next.js, take a look at the following resources:
+2. Install Docker: 
+	- Click this [link](https://docs.docker.com/engine/install/ubuntu/) to see how download Docker.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install make to use Makefile as an entry point: `sudo apt-get install make`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Clone this repository: `git clone https://github.com/regadior/sing-in-next-auth-skeleton.git`
 
-## Deploy on Vercel
+5. Go to .env file: 
+	- Add your providers credentials in your .env file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. Run Makefile with: 
+	- Go to app folder to start: `cd sing-in-next-auth-skeleton`
+	- 🚀Run the app with: `make start/dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## 🌚 Actions
+(*~~example~~ it means that it is in process*)
+##### APP
+
+- You can Sing In on google, github, twitch and other providers.
+
+### ⭐ Stargazers
+
+[![Stargazers repo roster for @regadior/sing-in-next-auth-skeleton](https://reporoster.com/stars/regadior/sing-in-next-auth-skeleton)](https://github.com/regadior/MediaApp/sing-in-next-auth-skeleton)
+
