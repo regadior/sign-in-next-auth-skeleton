@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ..
+      args:
+        - PORT=${PORT}
+      dockerfile: ./docker/Dockerfile
+      target: dev
+    image: ${APP_NAME}:dev
+    container_name: ${APP_NAME}
+    restart: always
+    environment:
+      - TZ=${TZ}
+    ports:
+      - ${EXTERNAL_PORT}:${PORT}
