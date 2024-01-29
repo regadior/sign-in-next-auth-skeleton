@@ -1,12 +1,12 @@
-# Etapa 1: Desarrollo
+# Etapa 1: Development
 FROM node:20-alpine AS dev
 
-# Instalar dependencias solo cuando sea necesario
+# Install dependencies only when necessary
 RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
-# Instalar dependencias basadas en el gestor de paquetes preferido
+# Install dependencies based on the preferred package manager
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 RUN \
   if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
@@ -15,8 +15,8 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
-# Copiar la aplicación
+# Copy the application
 COPY . .
 
-# Ejecutar el servidor de desarrollo de Next.js
+# Run the Next.js development server
 CMD ["npm", "run", "dev"]

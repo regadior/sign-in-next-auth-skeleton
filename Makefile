@@ -38,13 +38,6 @@ endif
 %/prod: ENVIRONMENT = prod
 build/%: TAG ?= $(ENVIRONMENT)
 
-.PHONY: build/dev build/prod
-build/dev: ## Build development environment
-build/prod: ## Build production environment
-build/dev build/prod:
-	@echo "📦 Building project Docker image..."
-	@docker build --build-arg PORT=$(PORT) --target $(ENVIRONMENT) -t $(APP_NAME):$(TAG) -f ./docker/Dockerfile .
-
 .PHONY: start/dev
 start/dev: ## Start application in development mode
 	@echo "▶️ Starting app in development mode (Docker)..."
@@ -54,11 +47,6 @@ start/dev: ## Start application in development mode
 start/prod: ## Start application in production mode
 	@echo "▶️ Starting app in production mode (Docker)..."
 	@docker-compose -f ./docker/docker-compose.$(ENVIRONMENT).yml --env-file .env up -d --build
-
-.PHONY: test/dev
-test/dev: build/dev ## Run tests in development mode
-	@echo "Running all tests..."
-	@docker run --rm $(APP_NAME):$(ENVIRONMENT) npm run test
 
 .PHONY: stop/dev stop/prod
 stop/dev: ## Stop development environment
