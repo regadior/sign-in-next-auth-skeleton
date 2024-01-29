@@ -56,5 +56,5 @@ This project consists of a web made with ` NextJs `, using ` NextAuth ` to Sing 
 
 ### ⭐ Stargazers
 
-[![Stargazers repo roster for @regadior/sing-in-next-auth-skeleton](https://reporoster.com/stars/regadior/sing-in-next-auth-skeleton)](https://github.com/regadior/MediaApp/sing-in-next-auth-skeleton)
+[![Stargazers repo roster for @regadior/sing-in-next-auth-skeleton](https://reporoster.com/stars/regadior/sing-in-next-auth-skeleton)](https://github.com/regadior/sing-in-next-auth-skeleton/stargazers)
 
